@@ -29,20 +29,20 @@
             }
             .wrapper{
                 margin: 0 auto;
-                width: 30%;
+                width: 50%;
                 clear: both;
                 font-family: century gothic;
             }
             .content{
                 height: auto;
                 float: left;
-                margin-top: 50%;
+                margin-top: 20%;
                 width: 90%;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
                 padding: 5%;
             }
             input[type=text]{
-                width: 60%;
+                width: 50%;
                 padding: 10px 15px;
                 color: black;
                 display: inline-block;
@@ -52,7 +52,20 @@
                 background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
                 background: rgba(255, 255, 255, 0.8);
             }
-            button.dropbtn{
+            .content select[type=text], select {
+                width: 30%;
+                padding: 10px 15px;
+                color: black;
+                margin: 8px 0;
+                display: inline-block;
+                font-family: century gothic;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
+                background: rgba(255, 255, 255, 0.8);
+            }
+            button{
                 width: auto;
                 background-color: #335fa1;
                 color: white;
@@ -62,40 +75,10 @@
                 border-radius: 4px;
                 cursor: pointer;
             }
-            button.dropbtn:hover {
+            button:hover {
                 background-color: #3a6ab2;
                 color: white;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-            }
-            .dropdown {
-                position: relative;
-                display: inline-block;
-            }
-
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #f9f9f9;
-                min-width: 200px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-
-            .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
-
-            .dropdown-content a:hover {background-color: #f1f1f1}
-
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-
-            .dropdown:hover .dropbtn {
-                background-color: #3e8e41;
             }
             .attendance-table{
                 float: left;
@@ -138,15 +121,13 @@
             <div class="wrapper">
                 <div class="content">
                     <input type="text" name="student_id" value="" placeholder="Student ID"/>
-                    <div class="dropdown">
-                      <button class="dropbtn">Submit</button>
-                      <div class="dropdown-content">
-                        <a href="#">Time In Morning</a>
-                        <a href="#">Time Out Morning</a>
-                        <a href="#">Time In Afternoon</a>
-                        <a href="#">Time Out Afternoon</a>
-                      </div>
-                    </div>
+                    <select type="text">
+                    <option value="">Time In Morning</option>
+                    <option value="">Time Out Morning</option>
+                    <option value="">Time In Afternoon</option>
+                    <option value="">Time Out Afternoon</option>
+                </select>
+                <button type="submit">Submit</button>
                 </div>
             </div>
         </div>
