@@ -15,7 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/check-attendance', function (){
 	return view('check-attendance');
     
 })->name('check-attendance');
+
+Route::get('/activities', function () {
+    return view('activities');
+})->name('activities');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
