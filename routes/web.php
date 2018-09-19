@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/check-attendance', function (){
+	return view('check-attendance');
+    
+})->name('check-attendance');
