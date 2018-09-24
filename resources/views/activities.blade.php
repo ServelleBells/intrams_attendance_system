@@ -11,7 +11,7 @@
             <thead>
               <tr>
                 <th>Firstname</th>
-                <th>Name OF Activity</th>
+                <th>Name Of Activity</th>
                 <th>Action</th>
 
               </tr>

@@ -5,13 +5,13 @@
 
 <center>
 	<br>
-<form action="" method="POST">
+<form action="{{route('activities.store')}}" method="post">
 							{{ csrf_field() }}
 							<label>New Activity</label><br/>
 							<label>Name:</label><br/>
 							<input type="text" name="name" value=""/>
 							<br><br>							
-							<button type="submit"><a href="">Create</a</button>
+							<button type="submit">Create</button>
 							<br/>
 						</form>
 
