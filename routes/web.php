@@ -29,7 +29,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/admin/activities/create', function(){
-	return view('admin.activites.create');
+	return view('admin.activities.create');
 })->name('admin.activities.create');
 
 
