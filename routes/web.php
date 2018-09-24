@@ -22,3 +22,10 @@ Route::get('/activities', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/activities/create', function(){
+	return view('activites.create');
+})->name('activities.create');
+
+
+Route::get('/activities/{id}/show', 'ActivitiesController@show')->name('activities.id.show');
