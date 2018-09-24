@@ -18,7 +18,6 @@ Route::get('/', function () {
 
 Route::get('/check-attendance', function (){
 	return view('check-attendance');
-    
 })->name('check-attendance');
 
 Route::get('/activities', function () {
