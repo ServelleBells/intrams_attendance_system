@@ -34,3 +34,5 @@ Route::get('/admin/activities/create', function(){
 
 
 Route::get('/activities/{id}/show', 'ActivitiesController@show')->name('activities.id.show');
+
+Route::post('/admin/activities/store', 'ActivitiesController@store')->name('activities.store');
