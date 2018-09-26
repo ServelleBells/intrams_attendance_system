@@ -28,6 +28,25 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+Route::get('/new', function () {
+	return view ('new');
+})->name('new');
+
+Route::get('/activities/create', function(){
+	return view('activities.create');
+})->name('activities.create');
+
+Route::get('/activities/{id}/show', function(){
+	return view('activities.show');
+})->name('activities.id.show');
+
+
+
+
+
+
+
 Route::get('/admin/activities/create', function(){
 	return view('admin.activities.create');
 })->name('admin.activities.create');
@@ -36,3 +55,4 @@ Route::get('/admin/activities/create', function(){
 Route::get('/activities/{id}/show', 'ActivitiesController@show')->name('activities.id.show');
 
 Route::post('/admin/activities/store', 'ActivitiesController@store')->name('activities.store');
+
