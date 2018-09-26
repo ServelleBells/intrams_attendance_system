@@ -17,11 +17,13 @@
               </tr>
             </thead>
             <tbody>
+              @foreach($activities as $activity)
               <tr>
-                <td>Day 1</td>
-                <td>Talent Night</td>
+                <td>{{$loop->iteration}}</td>
+                <td>{{$activity->name}}</td>
                 <td><button class="btn btn-primary">Check Attendance</button></td>
               </tr>
+            @endforeach
             </tbody>
           </table>
         </div>

@@ -14,8 +14,19 @@ class ActivitiesController extends Controller
         $activity->name=$request->name;
         $activity->save();
 
-        return redirect()->route('activities');
+        return redirect()->route('activities.index');
         //dd($request);
      
     }
+
+    public function index(Request $request)
+    {
+    	$activities = Activity::all();
+    	return view('activities', array('activities'=>$activities));
+
+
+
+    }
+
+
 }

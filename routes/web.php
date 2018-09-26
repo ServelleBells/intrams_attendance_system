@@ -20,9 +20,7 @@ Route::get('/check-attendance', function (){
 	return view('check-attendance');
 })->name('check-attendance');
 
-Route::get('/activities', function () {
-    return view('activities');
-})->name('activities');
+Route::get('/activities','ActivitiesController@index')->name('activities.index');
 
 Auth::routes();
 
