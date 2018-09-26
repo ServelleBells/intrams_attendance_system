@@ -44,6 +44,11 @@ Route::get('/activities/create', function(){
 	return view('activities.create');
 })->name('activities.create');
 
+Route::get('/admin/students/create', function(){
+	return view('admin.students.create');
+})->name('admin.students.create');
+
+
 Route::get('/activities/{id}/show', function(){
 	return view('activities.show');
 })->name('activities.id.show');
