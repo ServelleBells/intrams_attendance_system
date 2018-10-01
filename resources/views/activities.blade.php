@@ -21,7 +21,7 @@
               <tr>
                 <td>{{$loop->iteration}}</td>
                 <td>{{$activity->name}}</td>
-                <td><button class="btn btn-primary">Check Attendance</button></td>
+                <td><a href="{{ route('check-attendance') }}"><button class="btn btn-primary">Check Attendance</button></a></td>
               </tr>
             @endforeach
             </tbody>
