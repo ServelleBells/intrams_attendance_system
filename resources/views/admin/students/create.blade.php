@@ -76,8 +76,8 @@
 				<center>
 					<h1><span style="color:#335fa1;">Sign Up</span> </h1>
 				</center>
-						<form>
-
+						<form action="{{route('admin.students.store')}}" method="post">
+							{{ csrf_field() }}
 
 							<label>Student ID:</label><br/>
 							<input type="text" name="student_id"/>
