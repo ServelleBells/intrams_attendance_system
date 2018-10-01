@@ -48,6 +48,9 @@ Route::get('/admin/students/create', function(){
 	return view('admin.students.create');
 })->name('admin.students.create');
 
+Route::post('/admin/students/store', 'StudentsController@store')->name('admin.students.store');
+
+Route::get('/admin/students/index', 'StudentsController@index')->name('admin.students.index');
 
 Route::get('/activities/{id}/show', function(){
 	return view('activities.show');

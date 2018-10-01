@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Student;
 
 class StudentsController extends Controller
 {
@@ -10,14 +11,19 @@ class StudentsController extends Controller
     public function store(Request $request)
     {
         $student = new Student();
-        $student->student_id=$student->student_id;
-        $student->last_name=$student->last_name;
-        $student->first_name=$student->first_name;
-        $student->course=$student->course;
-        $student->year_level=$student->year_level;
+        $student->student_id=$request->student_id;
+        $student->last_name=$request->last_name;
+        $student->first_name=$request->first_name;
+        $student->course=$request->course;
+        $student->year_level=$request->year_level;
         $student->save();
 
-        return redirect()->route('student');
+        return redirect()->route('admin.students.index');
         
+    } 
+
+    public function index() 
+    {
+    	 return view('admin.students.index');
     }
 }
