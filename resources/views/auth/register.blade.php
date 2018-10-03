@@ -1,6 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
+<head>
+    <style>
+    .form-control{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: .9rem;
+    line-height: 1.6;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    }
+    </style>
+</head>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -36,6 +52,17 @@
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
+                            </div>
+                        </div>
+
+                         <div class="form-group row">
+                            <label for="Account type" class="col-md-4 col-form-label text-md-right">{{ __('Account Type') }}</label>
+
+                            <div class="col-md-6">
+                                <select type="text" class="form-control">
+                                    <option value="">Admin</option>
+                                    <option value="">User</option>
+                                </select>
                             </div>
                         </div>
 
