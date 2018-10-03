@@ -23,9 +23,6 @@ class ActivitiesController extends Controller
     {
     	$activities = Activity::all();
     	return view('activities', array('activities'=>$activities));
-
-
-
     }
 
 
