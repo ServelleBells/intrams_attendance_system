@@ -15,14 +15,14 @@ class AccountTypeSeeder extends Seeder
         DB::table('users')->insert(
         [
         	[
-        	'account_types_id'=>1,
-        	'name'=> 'admin'
+        		'account_types_id'=>1,
+        		'name'=> 'admin'
         	],[
-        	'account_types_id'=>2,
-        	'name'=> 'checker'
+        		'account_types_id'=>2,
+        		'name'=> 'checker'
         	],[
-        	'account_types_id'=>3,
-        	'name'=> 'treasurer'
+        		'account_types_id'=>3,
+        		'name'=> 'treasurer'
         	]
         ]);
 
