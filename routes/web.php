@@ -36,10 +36,6 @@ Route::get('/activities/{id}/show', 'ActivitiesController@show')->name('activiti
 
 Route::post('/admin/activities/store', 'ActivitiesController@store')->name('activities.store');
 
-Route::get('/new', function () {
-	return view ('new');
-})->name('new');
-
 Route::get('/activities/create', function(){
 	return view('activities.create');
 })->name('activities.create');
@@ -48,6 +44,9 @@ Route::get('/admin/students/create', function(){
 	return view('admin.students.create');
 })->name('admin.students.create');
 
+Route::post('/admin/students/store', 'StudentsController@store')->name('admin.students.store');
+
+Route::get('/admin/students/index', 'StudentsController@index')->name('admin.students.index');
 
 Route::get('/activities/{id}/show', function(){
 	return view('activities.show');
