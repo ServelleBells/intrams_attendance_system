@@ -35,7 +35,13 @@ Route::get('/activities/{id}/show', function(){
 	return view('activities.show');
 })->name('activities.id.show');
 
+Route::get('/students/index', function(){
+	return view('students.index');
+})->name('students.index');
 
+Route::get('/students/{id}/show', function(){
+	return view('students.show');
+})->name('students.id.show');
 
 
 
