@@ -17,17 +17,17 @@ class UsersTableSeeder extends Seeder
 		      'account_types_id'=>1,
 		      'name'=> 'admin',
 		      'email' => 'admin@gmail.com',
-		      'passsword' => bcrypt('admin123'),
+		      'password' => bcrypt('admin123'),
 		    ],[
 		      'account_types_id'=>2,
 		      'name'=> 'checker',
 		      'email' => 'checker@gmail.com',
-		      'passsword' => bcrypt('checker123'),
+		      'password' => bcrypt('checker123'),
 		    ],[
 		      'account_types_id'=>3,
 		      'name'=> 'treasurer',
 		      'email' => 'treasurer@gmail.com',
-		      'passsword' => bcrypt('treasurer123'),
+		      'password' => bcrypt('treasurer123'),
 		    ]
 		  ]);
     }
