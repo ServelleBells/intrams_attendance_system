@@ -69,7 +69,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <!--<a href="{{ url('/home') }}">Home</a>-->
                     @else
                         <!--<a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>-->
@@ -87,7 +87,11 @@
                 </div>
 
                 <div class="links">
-                    <a href="{{ route('login') }}">Login to start</a>
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                        <a href="{{ route('login') }}">Login to start</a>
+                    @endauth    
                     <!--<a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://nova.laravel.com">Nova</a>
