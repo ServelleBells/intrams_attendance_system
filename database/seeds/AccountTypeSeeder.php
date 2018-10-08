@@ -12,16 +12,17 @@ class AccountTypeSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('account_types')->insert(
+
+        DB::table('users')->insert(
         [
         	[
-        		'id'=>1,
+        		'account_types_id'=>1,
         		'name'=> 'admin'
         	],[
-        		'id'=>2,
+        		'account_types_id'=>2,
         		'name'=> 'checker'
         	],[
-        		'id'=>3,
+        		'account_types_id'=>3,
         		'name'=> 'treasurer'
         	]
         ]);
