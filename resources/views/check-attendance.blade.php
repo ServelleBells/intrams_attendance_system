@@ -24,7 +24,7 @@
                 float: left;
                 height: auto;
                 background-color: white;
-                margin-top: 4%;
+                margin-top: 2%;
                 width: 100%;
             }
             .wrapper{
@@ -78,7 +78,13 @@
             button:hover {
                 background-color: #3a6ab2;
                 color: white;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+                box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.1);
+            }
+            hr {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border: 0;
+                border-top: 1px solid #eee;
             }
             .attendance-table{
                 float: left;
@@ -96,23 +102,38 @@
             .table-content{
                 float: left;
                 height: auto;
+                margin-top: 5%;
                 background-color: white;
                 width: 90%;
                 padding: 5%;
             }
             table {
-                margin-top: 10%;
+                margin-top: 3%;
                 width: 100%;
                 border-collapse: collapse;
                 font-family: century gothic;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
             }
 
-            td.table-navigation {
-                width: 200px;
-                border: 1px solid black;
+            th.table-navigation-name{
+                width: 300px;
+                border: 1px solid #ddd;
+                border-bottom: 3px solid #ddd;
+                box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.1);
                 padding: 15px;
                 text-align: center;
+            }
+            th.table-navigation{
+                width: 150px;
+                border: 1px solid #ddd;
+                border-bottom: 3px solid #ddd;
+                box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.1);
+                padding: 15px;
+                text-align: center;
+            }
+            td{
+                padding: 12px;
+                text-align: center;
+                border: 1px solid #ddd;
             }
         </style>
     </head>
@@ -134,19 +155,25 @@
         <div class="attendance-table">
             <div class="table-wrapper">
                 <div class="table-content">
-                    <table border="1">
+                    <hr>
+                    <center><h2>Attendance Table</h2></center>
+                    <table class="table table-striped">
                         <thead>
                             <tr>
-                                <td class="table-navigation">Name</td>
-                                <td class="table-navigation">Time In Morning</td>
-                                <td class="table-navigation">Time Out Morning</td>
-                                <td class="table-navigation">Time In Afternoon</td>
-                                <td class="table-navigation">Time Out Afternoon</td>
+                                <th class="table-navigation-name">Name</th>
+                                <th class="table-navigation">Time In Morning</th>
+                                <th class="table-navigation">Time Out Morning</th>
+                                <th class="table-navigation">Time In Afternoon</th>
+                                <th class="table-navigation">Time Out Afternoon</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                            
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
