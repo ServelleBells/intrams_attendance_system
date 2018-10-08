@@ -13,7 +13,7 @@ class AccountTypeSeeder extends Seeder
     public function run()
     {
 
-        DB::table('users')->insert(
+        DB::table('account_types')->insert(
         [
         	[
         		'id'=>1,
